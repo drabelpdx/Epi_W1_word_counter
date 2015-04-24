@@ -1,7 +1,7 @@
 class String
     define_method(:wordcount) do |userword|
 
-     wordstring = self.split(/\W+/)
+     wordstring = self.downcase.split(/\W+/)
      counter = 0
      wordstring.each do
          counter += 1
@@ -11,7 +11,7 @@ class String
 #binding.pry
      until counter < 1
          counter -= 1
-        if wordstring.fetch(index).to_str == userword
+        if wordstring.fetch(index).to_str == userword.downcase
           counts += 1
         end
         index +=1
