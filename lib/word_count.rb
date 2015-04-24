@@ -1,5 +1,5 @@
 class String
-    define_method(:wordcount) do
+    define_method(:wordcount) do |userword|
 
      wordstring = self.split(/\W+/)
      counter = 0
@@ -11,12 +11,12 @@ class String
 #binding.pry
      until counter < 1
          counter -= 1
-        if wordstring.fetch(index).to_str == "user_word"
+        if wordstring.fetch(index).to_str == userword
           counts += 1
         end
         index +=1
       end
-#binding.pry
+binding.pry
       return counts
   end
  end
