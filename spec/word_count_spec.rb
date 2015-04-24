@@ -15,5 +15,8 @@ describe('String#wordcount') do
     expect("I am so very happy, happy, happy to be getting my code reviewed today.".wordcount("happy")).to(eq(3))
     end
 
+    it("should count the number of times the user generated word appears in a sentence and accounts for case.") do
+    expect("I am so Happy, Happy, Happy to be getting my code reviewed today.".wordcount("happy")).to(eq(3))
+    end
 
 end

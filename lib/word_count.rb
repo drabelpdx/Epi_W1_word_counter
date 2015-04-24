@@ -16,7 +16,7 @@ class String
         end
         index +=1
       end
-binding.pry
+#binding.pry
       return counts
   end
  end
