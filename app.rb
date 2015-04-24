@@ -7,7 +7,7 @@ get('/') do
     erb(:index)
 end
 
-get('/special') do
-    @special = params.fetch('special').wordcount()
-    erb(:special)
+get('/counts') do
+    @counts = params.fetch("field2").wordcount(params.fetch("field1"))
+    erb(:counts)
 end

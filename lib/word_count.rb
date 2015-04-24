@@ -8,7 +8,6 @@ class String
      end
      counts = 0
      index = 0
-#binding.pry
      until counter < 1
          counter -= 1
         if wordstring.fetch(index).to_str == userword.downcase
@@ -16,7 +15,6 @@ class String
         end
         index +=1
       end
-#binding.pry
       return counts
   end
  end
