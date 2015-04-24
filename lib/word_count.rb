@@ -11,7 +11,7 @@ class String
 #binding.pry
      until counter < 1
          counter -= 1
-        if wordstring.fetch(index).to_str == "happy"
+        if wordstring.fetch(index).to_str == "user_word"
           counts += 1
         end
         index +=1
